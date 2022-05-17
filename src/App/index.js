@@ -12,7 +12,6 @@ export const App = () => {
     clearOnParamChange: true,
     skip: () => !loggedIn,
   })
-  console.log("app")
   return (
     <>
       <GlobalStyle />

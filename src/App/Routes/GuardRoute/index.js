@@ -7,8 +7,6 @@ export const GuardRoute = ({ children, type }) => {
   const loggedIn = useLoggedIn()
   const location = useLocation()
 
-  console.log("logged", loggedIn)
-
   if (loggedIn && type === types.loggedOut) {
     return (
       <Navigate

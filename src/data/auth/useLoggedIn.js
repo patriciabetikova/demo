@@ -7,6 +7,5 @@ export const useLoggedIn = () => {
   useEffect(() => {
     loggedIn$.subscribe(setTokens)
   }, [])
-  console.log("tok", tokens)
   return !!tokens?.accessToken
 }
